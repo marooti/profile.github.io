@@ -1,0 +1,47 @@
+.image-container {
+    position: relative;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 9%;
+    color: #ffffff; /* Adjust text color */
+    text-align: center;
+  }
+  .text-card{
+    width: 191px;
+    height: 189px;
+    border-radius: 50%;
+    color: black;
+    // background-color: rgb(150, 106, 48);
+  }
+  .scheduling:hover{
+    background-color: #CC222B;
+    color: white;
+    margin-left: 7px;
+  }
+  .tast-post:hover{
+    background-color: #B4203F;
+    color: white;
+    margin-left: 6px;
+    margin-bottom: 10px;
+  }
+  .geofence:hover{
+    background-color: #9C1D53;
+    color: white;
+    margin-left: 3px;
+  }
+  .clockIn:hover{
+    background-color: #841B68;
+    color: white;
+  }
+  .timesheet:hover{
+    background-color: #6C187C;
+    color: white;
+    margin-left: -4;
+  }
+  .chat:hover{
+    background-color: #541690;
+    color: white;
+    margin-left: -6px;
+  }

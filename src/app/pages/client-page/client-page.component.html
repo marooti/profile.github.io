@@ -1,0 +1,47 @@
+<div class="col-12 surface-200 flex justify-content-center">
+  <div class="lg:col-10 md:col-11 col-12">
+    <!-- Heading -->
+    <div class="m-4">
+      <div>
+        <span class="text-base font-medium text-purple-600">Testimonials</span>
+      </div>
+      <div>
+        <h1>What our trusted client say</h1>
+      </div>
+    </div>
+
+    <p-carousel [value]="carouselItems" [numVisible]="numVisibleSlides" [numScroll]="1" [circular]="true">
+      <ng-template let-item pTemplate="item">
+        <div class="m-2 col-12">
+          <div class="col-12 bg-white border-round-2xl">
+            <div>
+              <div class="mx-1 my-3 text-left">
+                <p-rating [(ngModel)]="val2" [cancel]="false"></p-rating>
+              </div>
+              <div class="m-3 text-left">
+                <span>{{ item.content }}</span>
+              </div>
+
+              <div class="flex m-3">
+                <div class="mr-2">
+                  <p-avatar shape="circle">
+                    <img [src]="item.avatar" alt="">
+                  </p-avatar>
+                </div>
+                <div>
+                  <div class="text-base font-medium">
+                    <span>{{ item.name }}</span>
+                  </div>
+                  <div class="text-left">
+                    <span>{{ item.position }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+
+</div>

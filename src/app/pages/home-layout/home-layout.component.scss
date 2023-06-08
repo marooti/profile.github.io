@@ -1,0 +1,53 @@
+.container{
+    background: #5416900D;
+}
+span{
+    color: #363636D4;
+}
+.box {
+    border: 1px solid black;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  .box input,
+  .box button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .email-address{
+    border: 1px solid #9C4F96;
+
+  }
+:host::ng-deep{
+    .p-inputtext {
+        background: transparent;
+        border: none;
+      }
+      .p-button{
+        background: #9C4F96;
+        border: none;
+        padding: 13px 85px;
+      }
+      .p-button:enabled:hover {
+        background: #9C4F96;
+        border: none;
+      }
+      .p-inputtext:enabled:focus {
+        box-shadow: none;
+      }
+}
+@media screen and (max-width:600px){
+    .email-address{
+        border: none;
+    }
+    :host::ng-deep{
+        .p-inputtext {
+       
+            border-bottom: 1px solid #000;
+          }
+    }
+}
+img{
+  margin-bottom:-3px;
+}

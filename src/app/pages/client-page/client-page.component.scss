@@ -1,0 +1,26 @@
+:host ::ng-deep .p-carousel .p-carousel-content .p-carousel-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-content .p-carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+:host ::ng-deep .p-rating .p-rating-icon {
+  color: #FFE100;
+  margin-left: 0.5rem;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  font-size: 1.143rem;
+}
+
+:host ::ng-deep {
+  .p-rating:not(.p-disabled):not(.p-readonly) .p-rating-icon:hover {
+    color: #FFE100;
+  }
+
+  .p-carousel .p-carousel-content .p-carousel-item {
+    padding: 0px;
+  }
+}

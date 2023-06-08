@@ -1,0 +1,16 @@
+<div class="card px-2 flex align-items-center lg:px-6 h-4rem bg-white shadow-1">
+  <p-menubar [model]="items" [autoDisplay]="true">
+    <ng-template pTemplate="start">
+      <a routerLink="/"><img src="assets/zeppix_logo.png" width="130" height="70" class="py-2" /> </a>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div class="flex">
+        <p-button icon="pi pi-arrow-right" iconPos="right" label="Login" class="login-btn" (onClick)="login()"
+          styleClass="login-btn p-button-rounded p-button-help p-button-text"></p-button>
+        <div class="contact-btn md:block hidden" routerLink="contact">
+          <button pButton type="text" label="Contact" class="ml-2"></button>
+        </div>
+      </div>
+    </ng-template>
+  </p-menubar>
+</div>

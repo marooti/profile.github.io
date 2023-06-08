@@ -1,0 +1,48 @@
+.container{
+    background: rgba(84, 22, 144, 0.05);
+}
+span{
+    color: black;
+}
+.sidebar-img{
+   
+    background-image: url("../../../assets/sidebar_rectangular.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.image{
+    margin-top: -75px !important;
+}
+.mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+  }
+  :host::ng-deep{
+    span.mat-expansion-indicator{
+        background: #541690;
+    width: 30px;
+    height: 30px;
+    line-height: 24px;
+    border-radius: 50px;
+    text-align: center;
+
+    }
+    .mat-expansion-panel-header-description, .mat-expansion-indicator::after {
+        color: #fff;
+       padding: 5px ;
+       border-width: 0px 3px 3px 0;
+    }
+    .mat-accordion .mat-expansion-panel {
+        margin: 10px 0px;
+        border-radius: 16px !important;
+        box-shadow: unset !important;
+    }
+    .mat-expansion-panel-header {
+        padding: 30px 26px !important;
+    }
+  }
+
+  @media screen and (max-width:1024px){
+    .sidebar-img{
+        background-position: 20px;
+    }
+  }

@@ -1,0 +1,25 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 50px;
+  }
+  
+  .text-overlay h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .btn{
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 150px;
+  }
+  

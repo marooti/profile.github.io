@@ -1,0 +1,44 @@
+:host::ng-deep{
+    .p-menubar {
+        background: transparent;
+        border: none;
+        padding: 0px;
+        position: relative;
+    }
+    p-menubar{
+        width: 100% !important;
+    }
+    p-menubarsub.p-element{
+        margin: 0 auto;
+        
+    }
+  
+    .p-menubar .p-menuitem-link {
+        padding: 18px 15px;
+    }
+    
+    span.p-menuitem-icon.pi.pi-stop-circle {
+        color: #541690 !important;
+    }
+   
+    .p-menubar .p-menubar-button {
+        padding-right: 11px;
+    }
+    .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
+        padding: 0.75rem 1.8rem;
+    }
+    button.p-ripple.p-element.login-btn.p-button-rounded.p-button-help.p-button-text.p-button.p-component {
+        color: #000 !important;
+        font-weight: 600;
+    }
+    .p-menubar .p-menubar-custom, .p-menubar .p-menubar-end {
+        margin-left: inherit;
+    }
+}
+@media screen and (max-width: 1024px) {
+    :host::ng-deep{
+    .p-menubar-start{
+        width: 100% ;
+    }
+}
+}

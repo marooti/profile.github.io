@@ -1,0 +1,35 @@
+.container{
+
+    background-position: 2px 47px;
+    background-image: url("../../../assets/footer_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+span{
+    color: #6F6C90;
+    font-family: 'DM Sans';
+    word-spacing: 3px;
+}
+a:hover {
+  color: #9C4F96;
+}
+.pi {
+  font-size: 22px;
+  color: #FF4949;
+  line-height: 1;
+}
+h1{
+    color: #170F49;
+}
+a{
+    text-decoration: none !important;
+    color: #170F49;
+}
+a:hover{
+    text-decoration: none;
+}
+.company-address{
+    text-indent: -18px;
+    padding-left: 36px;
+
+}

@@ -1,0 +1,106 @@
+
+
+<div class="container px-4 pt-8 pb-5 md:px-6 lg:px-8">
+  <div class="grid pt-8">
+    <div
+      class="col-12 md:col-6 lg:col-4 flex flex-wrap flex-column justify-content-start md:mb-0 mb-3"
+    >
+      <a routerLink="/">
+        <img
+          src="assets/zeppix_logo.png"
+          width="190"
+          height="120"
+          class="py-2"
+        />
+      </a>
+      <!-- text under logo -->
+      <div
+      class=" text-base mb-4 flex flex-wrap"
+      style="max-width: 290px"
+    >
+    <span>Smart Automation Software for 
+      Employee Scheduling, Time & Attendance, Team Chat, and more</span>
+    </div>
+
+    <!-- social media icons -->
+    <div class="social-icon mt-3 flex">
+      <i
+        class="icon mr-3 pi pi-facebook cursor-pointer"
+        (click)="openFacebook()"
+      >
+      </i>
+      <i
+        class="icon mr-3 pi pi-twitter cursor-pointer"
+        (click)="openTwitter()"
+      >
+      </i>
+      <i
+        class="icon mr-3 pi pi-instagram cursor-pointer"
+        (click)="openInstagram()"
+      >
+      </i>
+      <i
+        class="icon mr-3 pi pi-linkedin cursor-pointer"
+        (click)="openLinkedin()"
+      >
+      </i>
+    </div>
+    </div>
+  
+    <div class="col-12 md:col-6 lg:col-3 ">
+      <div class=" font-bold line-height-3 text-2xl mb-3">Company</div>
+      <ul class="list-none cursor-pointer line-height-3 text-base">
+        <li class="pb-1 pt-1">
+          <a routerLink="about" (click)="scrollPage()" class="text-sm">About</a>
+        </li>
+        <li class="pb-1 pt-1" routerLink="contact">
+          <a class="text-sm">Contact us</a>
+        </li>
+        <li class="pb-1 pt-1" routerLink="blogs">
+          <a class="text-sm">Blog</a>
+        </li>
+        <li class="pb-1 pt-1">
+          <a class="text-sm">Login</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3 ">
+      <div class=" font-bold line-height-3 text-2xl mb-3">Support</div>
+      <ul class="list-none cursor-pointer line-height-3 text-base">
+        <li class="pb-1 pt-1" routerLink="privacy-policy">
+          <a class="text-sm">Privacy Policy</a>
+        </li>
+        <li class="pb-1 pt-1" routerLink="terms-and-conditions">
+          <a class="text-sm">Terms and conditions</a>
+        </li>
+        <li class="pb-1 pt-1" routerLink="faq">
+          <a class="text-sm">FAQ</a>
+        </li>
+        <li class="pb-1 pt-1">
+          <a class="text-sm">Help center</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- contact us  -->
+    <div class="col-12 md:col-6 lg:col-2 ">
+      <div class=" font-bold line-height-3 text-2xl mb-3">Contact Us </div>
+      <div class=" mb-3">
+        <i class="pi pi-envelope border-round p-1 mr-2"></i><a href="mailto:support@zepix.com">support@zepix.com</a>
+      </div>
+      <div class=" mb-3">
+        <i class="pi pi-phone border-round p-1 mr-2 "></i> <a href='tel:+16479870002'> (414) 000 - 0000</a>
+      </div>
+      <div class=" mb-3 company-address ">
+        <i class="pi pi-map-marker border-round p-1 mr-2 "></i> <a href='tel:+16479870002'>794 Mcallister St
+          San Francisco, 94102</a>
+      </div>
+    </div>
+  </div>
+  <p-divider></p-divider>
+  
+  <div class="md:flex md:justify-content-between pt-3 ">
+    <span>Copyright © 2023 Zepix</span>
+    <div class="mt-2 md:ml-2 md:mt-0">All Rights Reserved | <a class="underline text-color-secondary cursor-pointer  ">Terms and Conditions</a> | <a class=" cursor-pointer underline text-color-secondary" >Privacy Policy</a>   </div>
+  </div>
+</div>

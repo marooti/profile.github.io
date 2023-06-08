@@ -1,0 +1,39 @@
+<div class="col-12 p-0 justify-content-center">
+    <div>
+        <img src="../../../assets/blog.png" alt="" width="100%">
+    </div>
+    <div class="col-12 p-0 justify-content-center flex">
+        <div class="col-11 flex flex-wrap-reverse md:flex-wrap">
+            <div class="lg:col-4 md:col-6 col-12" *ngFor="let data of dataArray">
+                <div class="m-2 col-12 pb-3 p-0 shadow-3 border-round-3xl">
+                    <div class="w-full">
+                        <img [src]="data.image" alt="" width="100%" style="border-radius: 10px;">
+                    </div>
+                    <div class="col-12 bg-white p-3">
+                        <div>
+                            <div>
+                                <span>{{data.date}}</span>
+                            </div>
+                            <div class="py-2">
+                                <span class="text-lg font-medium">{{data.heading}}</span>
+                            </div>
+                            <div class="text-left">
+                                <span>{{ data.content }}</span>
+                            </div>
+    
+                            <div class="flex mt-2 cursor-pointer" (click)="navigate()">
+                               <div>
+                                <span class="text-purple-700 font-medium">{{data.read}}</span>
+                               </div>
+                               <div class="pl-2">
+                                <img src="../../../assets/Arrow 6.png" alt="">
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-social-page></app-social-page>
+</div>

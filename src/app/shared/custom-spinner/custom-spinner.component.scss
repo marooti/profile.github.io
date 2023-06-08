@@ -1,0 +1,46 @@
+@import './../../../style/breeo-colors.scss';
+
+// $color-breeo: #ff5d00;
+// $color-breeo-light: #ff8540;
+
+:host ::ng-deep .custom-spinner .p-progress-spinner-circle {
+	animation: custom-progress-spinner-dash 1.5s ease-in-out infinite,
+		custom-progress-spinner-color 6s ease-in-out infinite;
+}
+
+@keyframes custom-progress-spinner-color {
+
+	100%,
+	0% {
+		stroke: $color-breeo;
+	}
+
+	40% {
+		stroke: $color-breeo;
+	}
+
+	66% {
+		stroke: $color-breeo-light;
+	}
+
+	90% {
+		stroke: $color-breeo-light;
+	}
+}
+
+@keyframes custom-progress-spinner-dash {
+	0% {
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+	}
+
+	50% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -35px;
+	}
+
+	100% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -124px;
+	}
+}
